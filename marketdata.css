@@ -1,0 +1,10 @@
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    width: 50px;
+  }
+  th,td {
+    height: 50px;
+    vertical-align: bottom;
+  }

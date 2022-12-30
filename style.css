@@ -1,0 +1,32 @@
+
+.complete{
+    position: relative;
+    height: 100%x;
+    width: 100%
+}
+.complete::before {
+    content: "";
+    background-image: url(./images/logodesign.jpg);
+    background-size: cover;
+    position:absolute;
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.4;
+      /* filter: blur(2x); */
+  /* -webkit-filter: blur(2px); */
+      
+    }
+
+.otherthanbg{
+    position: relative;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .required:after {
+    content:" *";
+    color: red;
+  }
+  

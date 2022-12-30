@@ -1,0 +1,28 @@
+.complete{
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+.complete::before{
+    content:"";
+    background-image: url(./images/logodesign.jpg);
+    background-size: cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+    opacity: 0.5;
+
+}
+.otherthanbg{
+    position: relative;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  .txt{
+    /* color: rgb(247, 130, 231); */
+    /* color: white; */
+  }

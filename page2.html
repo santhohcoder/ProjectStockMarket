@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="complete container-fluid" id="completed">
+<div class="otherthanbg">
+        <div class="quote container-fluid">
+            <h1 class="text-center text-danger fw-bolder my-5"><b>WELCOME TO THE WORLD OF DATAS </b></h1>
+
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>“If you aren’t willing to own a stock for 10 years, don’t even think about owning it for 10 minutes.”</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                   <cite title="Source Title">Warren Buffet</cite>
+                </figcaption>
+              </figure>
+
+        </div>
+        <div class="pin my-3 form-control-sm d-flex  align-items-start justify-content-start container my-5">
+            <label for="pin" class="form-label fs-4 text-secondary px-2"> Enter your 4 Digit Pin </label>
+            <input type="number" class="forms" id="pin" placeholder="1234" width="50px" height="20px">
+          </div>
+
+        <div class=" 3box subdiv mx-5 container d-flex my-5 gap-5">
+            
+              <div class="d-flex flex-column align-items-center justify-content-center my-5  mx-5" id="weekly">
+
+                <img src="./images/daily.jpeg" class="img rounded float-start" width="400" height="250" alt="...">
+                <div class="d-flex gap-2 my-3 ">
+                    <a  target="_blank" href="./intraday.html" class="link-primary  fw-bold fs-5">Click here </a>
+                    <span class="fs-5"> to get data of Intra Day Trading </span>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center my-5 mx-5" id="weekly">
+
+                <img src="./images/weekly.jpeg" class="img" width="400" height="250" alt="...">
+                <div class="d-flex gap-2 my-3 ">
+                    <a  target="_blank" href="./marketdata.html?function=TIME_SERIES_WEEKLY" class="link-primary  fw-bold fs-5">Click here </a>
+                    <span class="fs-5"> to get data of Weekly Trading </span>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center justify-content-center my-5 mx-5 " id="Intraday">
+
+                <img src="./images/monthly.png" class="img" width="400" height="250" alt="...">
+                <div class="d-flex gap-2 my-3 ">
+                    <a  target="_blank" href="./marketdata.html?function=TIME_" class="link-primary  fw-bold fs-5">Click here </a>
+                    <span class="fs-5"> to get data of Monthly Trading </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script>
+        let pin=window.localStorage.getItem('safetypin');
+        console.log("now your in page2");
+        console.log(pin);
+    </script>
+
+</body>
+
+</html>
